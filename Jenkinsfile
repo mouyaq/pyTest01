@@ -1,7 +1,7 @@
 #!groovy
 
 node {
-    stage 'Test'
-    echo 'Hello World'
+    stage 'Test2'
+    echo 'Hello World 2'
     sh 'python --version'
 }
