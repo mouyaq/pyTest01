@@ -3,5 +3,5 @@
 node {
     stage 'Test'
     echo 'Hello World'
-    sh 'python3 --version'
+    sh 'python --version'
 }
