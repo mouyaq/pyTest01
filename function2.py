@@ -1,3 +1,4 @@
+# function2.py
 function printer(text) {
     print(text)
 }
