@@ -1,11 +1,24 @@
-#!groovy
+pipeline {
+    agent any
 
-node {
-    stage 'Test1'
-    echo 'Hello World 1'
-    sh 'python --version'
-    stage 'Test2'
-    echo 'Hello World 2'
-    stage 'Test3'
-    echo 'Hello World 3'
+    stages {
+        stage('Test1') {
+            steps {
+                echo 'TEST1-0'
+                echo 'TEST1-1'
+            }
+        }
+        stage('Test2') {
+            steps {
+                echo 'TEST2-0'
+                echo 'TEST2-1'
+            }
+        }
+        stage('Test3') {
+            steps {
+                echo 'TEST1-0'
+                echo 'TEST1-1'
+            }
+        }
+    }
 }
