@@ -10,7 +10,7 @@ pipeline {
             agent {
                 docker {
                     image 'node:7-alpine'
-                    // args '--name docker-node' // list any args
+                    args '--privileged --name docker-node' // list any args
                 }
             }
             steps {
