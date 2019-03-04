@@ -18,6 +18,7 @@ pipeline {
                 echo 'TEST3-1'
                 echo 'TEST3-2'
                 echo 'TEST3-3'
+                sh 'python3 --version'
             }
         }
     }
